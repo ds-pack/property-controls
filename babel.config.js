@@ -13,7 +13,7 @@ module.exports = function (api) {
     ]
   }
   return {
-    presets: cfg,
+    presets: [cfg],
     plugins: [
       [
         '@babel/plugin-transform-typescript',
