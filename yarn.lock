@@ -277,7 +277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-plugin-utils@npm:^7.10.3":
+"@babel/helper-plugin-utils@npm:^7.10.1, @babel/helper-plugin-utils@npm:^7.10.3":
   version: 7.10.3
   resolution: "@babel/helper-plugin-utils@npm:7.10.3"
   checksum: 3/eaa3cbfb41fc1fb6a64f6612af9315bbc877e136e49b2dd62e6ac00d3ebd3f727d92d1112cafb19d981c5c00423ae78fd49b661214d3bf0d206820358ce870a1
@@ -419,6 +419,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-proposal-export-default-from@npm:7.10.1":
+  version: 7.10.1
+  resolution: "@babel/plugin-proposal-export-default-from@npm:7.10.1"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.10.1
+    "@babel/plugin-syntax-export-default-from": ^7.10.1
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 3/f52a0b25cbee7f198530f0ce133b763978c2491cd45a28999b213e028bcd7f1379731a450066a8af05d4fe2a73a85149198fbaa5dd32c5817d068ca28674403a
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-proposal-json-strings@npm:^7.8.3":
   version: 7.8.3
   resolution: "@babel/plugin-proposal-json-strings@npm:7.8.3"
@@ -523,6 +535,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 3/134a6f37feac0e6d55f8188232e11798ccf699b02d50a4daf9c040f52a22ee32923a6a979443ecc865f4014937ffe67ac11b81aa5668b6792238c647314f41c9
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-export-default-from@npm:^7.10.1":
+  version: 7.10.1
+  resolution: "@babel/plugin-syntax-export-default-from@npm:7.10.1"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.10.1
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 3/6e1d4e52e90d3cd6e128d72f8f3ac6bdc373b4e394a7c074938e837556b97f9e6326d077c12f000aefbccaefbad83a4555c6de08a844e6d11064ddaf39c1b8ad
   languageName: node
   linkType: hard
 
@@ -1248,6 +1271,7 @@ __metadata:
   dependencies:
     "@babel/cli": ^7.8.4
     "@babel/core": ^7.9.6
+    "@babel/plugin-proposal-export-default-from": 7.10.1
     "@babel/plugin-transform-runtime": 7.10.3
     "@babel/plugin-transform-typescript": ^7.9.6
     "@babel/preset-env": ^7.9.6
